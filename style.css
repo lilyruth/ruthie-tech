@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+ font-family: 'Montez', sans-serif;
+ height: 50vh;
+}
+
+header h1 {
+ font-size: 12rem;
+ color: rgb(99, 62, 141);
+ z-index: 2;
+}
+
+.pink-stars {
+ position: relative;
+ overflow: hidden;
+ background: linear-gradient(.375turn, lightpink, lavender);
+}
+
+.star {
+ display: block;
+ position: absolute;
+ top: 10%;
+ left: 10%;
+ width: 4px;
+ height: 4px;
+ background: white;
+ border-radius: 50%;
+ overflow: hidden;
+ z-index: 1;
+ animation: twinkle 2.5s linear 0s infinite normal;
+ -webkit-animation: twinkle 2.5s linear 0s infinite normal;
+}
+
+@keyframes twinkle {
+ 0% {
+  transform: scale(1);
+  opacity: .8;
+ }
+
+ 25% {
+  transform: scale(.25);
+  opacity: 0;
+ }
+
+ 50% {
+  transform: scale(1.5);
+  opacity: .4;
+ }
+
+ 75% {
+  transform: scale(.25);
+  opacity: 0;
+ }
+
+ 100% {
+  transform: scale(1);
+  opacity: .8;
+ }
+
+}
+
+@-webkit-keyframes twinkle {
+ 0% {
+  transform: scale(1);
+  opacity: .8;
+ }
+
+ 25% {
+  transform: scale(.25);
+  opacity: 0;
+ }
+
+ 50% {
+  transform: scale(1.5);
+  opacity: .4;
+ }
+
+ 75% {
+  transform: scale(.25);
+  opacity: 0;
+ }
+
+ 100% {
+  transform: scale(1);
+  opacity: .8;
+ }
+
+}
+
+@media screen and (max-width:600px) {
+
+ header h1 {
+  font-size: 4rem;
+ }
+ 
+}
