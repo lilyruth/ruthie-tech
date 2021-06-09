@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+
+a:hover {
+  color: darkslateblue;
+}
+a:active {
+  color: black;
 }
 
 header {
@@ -15,6 +25,12 @@ header h1 {
  font-size: 12rem;
  color: rgb(99, 62, 141);
  z-index: 2;
+}
+
+span {
+  font-size: 1.5rem;
+  color: transparent;
+  text-shadow: 0 0 0 rgb(99, 62, 141);
 }
 
 .pink-stars {
@@ -94,10 +110,89 @@ header h1 {
 
 }
 
-@media screen and (max-width:600px) {
+.under-header-line {
+  height: 2px;
+  background:rgb(99, 62, 141);
+}
+
+.under-header-break {
+  height: 10px;
+  background:white;
+}
+
+.tagline {
+  background:rgb(99, 62, 141);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-projects {
+  background:white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.emoji {
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}
+
+.about-projects {
+  color:rgb(99, 62, 141);
+}
+
+.project {
+  min-height: 5rem;
+  background-color:rgb(99, 62, 141);
+  color: white;
+}
+
+.project .purple,
+.project span {
+  color: white;
+}
+
+.under-header-line-2 {
+  height: 2px;
+  background: lightpink;
+}
+
+.link {
+  min-height: 5rem;
+  border: 2px solid rgb(99, 62, 141);
+}
+
+.link a {
+  color:rgb(99, 62, 141);
+}
+
+footer {
+  background: linear-gradient(.375turn, lightpink, lavender);
+  height: 4rem;
+ 
+}
+
+footer, 
+footer a {
+   color:rgb(99, 62, 141);
+}
+
+@media screen and (max-width:675px) {
 
  header h1 {
   font-size: 4rem;
  }
+
+ h2 {
+   font-size: 1.5rem;
+ }
+
+ .hearts {
+   font-size: .6rem;
+ }
+
+ .emoji {
+   font-size: 1.5rem;
+ }
+
  
 }
