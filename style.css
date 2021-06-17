@@ -176,6 +176,111 @@ footer a {
    color:rgb(99, 62, 141);
 }
 
+.shine {
+ 
+  animation: let-it-shine 60s linear 2s infinite normal;
+  -webkit-animation: let-it-shine 60s linear 2s infinite normal;
+}
+
+@keyframes let-it-shine { 
+
+  0% {
+    background: linear-gradient(.375turn, #ffb6c1, lavender);
+  }
+
+  .125% {
+
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,182,193,1) 15%, rgba(230,230,250,1) 100%);
+
+  }
+
+    .25% {
+
+    background: linear-gradient(135deg, rgba(255,182,193,1) 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
+
+  }
+
+  .375% {
+
+    background: linear-gradient(135deg, rgba(255,182,193,1) 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
+
+  }
+  
+
+  .5% {
+
+    background: linear-gradient(135deg, rgba(255,182,193,1) 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
+  }
+
+   .625% {
+    background: linear-gradient(135deg, rgba(255,182,193,1) 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
+  }
+
+  .75% {
+    background: linear-gradient(135deg, rgba(255,182,193,1) 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
+  }
+
+
+  .875% {
+ background: linear-gradient(135deg, rgba(255,182,193,1) 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
+  }
+
+   1% {
+ background: linear-gradient(135deg, rgba(255,182,193,1) 0%, rgba(230,230,250,1) 100%);
+  }
+ 
+}
+
+
+@-webkit-keyframes let-it-shine { 
+
+  0% {
+    background: linear-gradient(.375turn, #ffb6c1, lavender);
+  }
+
+  .125% {
+
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,182,193,1) 15%, rgba(230,230,250,1) 100%);
+
+  }
+
+    .25% {
+
+    background: linear-gradient(135deg, rgba(255,182,193,1) 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
+
+  }
+
+  .375% {
+
+    background: linear-gradient(135deg, rgba(255,182,193,1) 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
+
+  }
+  
+
+  .5% {
+
+    background: linear-gradient(135deg, rgba(255,182,193,1) 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
+  }
+
+   .625% {
+    background: linear-gradient(135deg, rgba(255,182,193,1) 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
+  }
+
+  .75% {
+    background: linear-gradient(135deg, rgba(255,182,193,1) 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
+  }
+
+
+  .875% {
+ background: linear-gradient(135deg, rgba(255,182,193,1) 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
+  }
+
+   1% {
+ background: linear-gradient(135deg, rgba(255,182,193,1) 0%, rgba(230,230,250,1) 100%);
+  }
+ 
+}
+
 @media screen and (max-width:675px) {
 
  header h1 {
