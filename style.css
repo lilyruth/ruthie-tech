@@ -18,11 +18,11 @@ a:active {
 
 header {
  font-family: 'Montez', sans-serif;
- height: 75vh;
+ height: 34vh;
 }
 
 header h1 {
- font-size: 12rem;
+ font-size: 10rem;
  color: rgb(99, 62, 141);
  z-index: 2;
 }
@@ -39,20 +39,122 @@ span {
  background: linear-gradient(.375turn, lightpink, lavender);
 }
 
-.star {
+/* animated stars */
+.star,
+.star2,
+.star3,
+.star4,
+.star5,
+.star6,
+.star7,
+.star8,
+.star9,
+.star10,
+.star11,
+.star12,
+.star13 {
  display: block;
  position: absolute;
- top: 10%;
- left: 10%;
- width: 4px;
- height: 4px;
+ width: 3px;
+ height: 3px;
  background: white;
- border-radius: 50%;
+ border-radius: 100%;
  overflow: hidden;
  z-index: 1;
- animation: twinkle 2.5s linear 0s infinite normal;
- -webkit-animation: twinkle 2.5s linear 0s infinite normal;
 }
+
+.star {
+  top: 10%;
+  left: 10%;
+  animation: twinkle 2.5s linear 0s infinite normal;
+  -webkit-animation: twinkle 2.5s linear 0s infinite normal;
+}
+
+.star2 {
+  top: 12%;
+  right: 12%;
+  animation: twinkle 2.5s linear 1s infinite normal;
+  -webkit-animation: twinkle 2.5s linear 1s infinite normal;
+}
+
+.star3 {
+  top: 25%;
+  left: 30%;
+  animation: twinkle 2s linear 2s infinite normal;
+  -webkit-animation: twinkle 2s linear 2s infinite normal;
+}
+
+.star4 {
+  top: 20%;
+  right: 34%;
+  animation: twinkle 3s linear 3s infinite normal;
+  -webkit-animation: twinkle 3s linear 3s infinite normal;
+}
+
+.star5 {
+  top: 45%;
+  left: 22%;
+  animation: twinkle 4s linear 4s infinite normal;
+  -webkit-animation: twinkle 4s linear 4s infinite normal;
+}
+
+.star6 {
+  top: 20%;
+  right: 50%;
+  animation: twinkle 1.8s linear 3s infinite normal;
+  -webkit-animation: twinkle 1.8s linear 3s infinite normal;
+}
+
+.star7 {
+  top: 75%;
+  left: 40%;
+  animation: twinkle 2.25s linear 2.25s infinite normal;
+  -webkit-animation: twinkle 2.25s linear 2.25s infinite normal;
+}
+
+.star8 {
+  top: 60%;
+  right: 41%;
+  animation: twinkle 1.5s linear 2.75s infinite normal;
+  -webkit-animation: twinkle 1.5s linear 2.75s infinite normal;
+}
+
+.star9 {
+  top: 72%;
+  left: 30%;
+  animation: twinkle 4s linear 4s infinite normal;
+  -webkit-animation: twinkle 4s linear 4s infinite normal;
+}
+
+.star10 {
+  top: 82%;
+  right: 23%;
+  animation: twinkle 1.5s linear 2.75s infinite normal;
+  -webkit-animation: twinkle 1.5s linear 2.75s infinite normal;
+}
+
+.star11 {
+  top: 85%;
+  left: 18%;
+  animation: twinkle 4s linear 4s infinite normal;
+  -webkit-animation: twinkle 4s linear 4s infinite normal;
+}
+
+.star12 {
+  top: 87%;
+  right: 8%;
+  animation: twinkle 2.5s linear 0s infinite normal;
+  -webkit-animation: twinkle 2.5s linear 0s infinite normal;
+}
+
+.star13 {
+  top: 90%;
+  left: 15%;
+  animation: twinkle 3s linear 3s infinite normal;
+  -webkit-animation: twinkle 3s linear 3s infinite normal;
+}
+
+
 
 @keyframes twinkle {
  0% {
@@ -115,8 +217,18 @@ span {
   background:rgb(99, 62, 141);
 }
 
+.under-header-line2 {
+  height: 10px;
+  background:rgb(99, 62, 141);
+}
+
 .under-header-break {
   height: 10px;
+  background:white;
+}
+
+.under-header-break2 {
+  height: 2px;
   background:white;
 }
 
@@ -141,7 +253,7 @@ span {
 }
 
 .project {
-  min-height: 5rem;
+  min-height: 6rem;
   background-color:rgb(99, 62, 141);
   color: white;
 }
@@ -176,11 +288,98 @@ footer a {
    color:rgb(99, 62, 141);
 }
 
-.shine {
- 
-  animation: let-it-shine 60s linear 2s infinite normal;
-  -webkit-animation: let-it-shine 60s linear 2s infinite normal;
+.explanation,
+.explanation2,
+.explanation3,
+.explanation4 {
+  border: 2px solid rgb(99, 62, 141);
+  background: white;
+  font-size: 1.35rem;
+  line-height: 1.5rem;
+  min-height: 6rem;
 }
+
+.explanation {
+  animation: exp-slide-in 1.5s ease-in-out;
+}
+.explanation2 {
+  animation: exp-slide-in2 2.5s ease-in-out;
+}
+.explanation3 {
+  animation: exp-slide-in3 3.75s ease-in-out;
+}
+.explanation4 {
+  animation: exp-slide-in4 5s ease-in-out;
+}
+
+@keyframes exp-slide-in {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  80% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+
+@keyframes exp-slide-in2 {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  50% {
+    transform: translateX(-200%);
+  }
+
+  90% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+
+@keyframes exp-slide-in3 {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  60% {
+    transform: translateX(-200%);
+  }
+
+  92% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+
+@keyframes exp-slide-in4 {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  70% {
+    transform: translateX(-200%);
+  }
+
+  95% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+
 
 @keyframes let-it-shine { 
 
@@ -281,10 +480,26 @@ footer a {
  
 }
 
+.progress-section {
+  background: rgb(99, 62, 141);
+}
+
+@media screen and (max-width: 575px) {
+  .project,
+  .explanation,
+  .explanation2,
+  .explanation3,
+  .explanation4 {
+    width: 95%!important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width:675px) {
 
  header h1 {
-  font-size: 4rem;
+  font-size: 6rem;
  }
 
  h2 {
@@ -301,3 +516,25 @@ footer a {
 
  
 }
+
+
+@media screen and (max-width:300px) {
+
+  header h1 {
+   font-size: 4rem;
+  }
+ 
+  h2 {
+    font-size: 1.5rem;
+  }
+ 
+  .hearts {
+    font-size: .6rem;
+  }
+ 
+  .emoji {
+    font-size: 1.5rem;
+  }
+ 
+  
+ }
