@@ -288,6 +288,11 @@ footer a {
    color:rgb(99, 62, 141);
 }
 
+.shine {
+  animation: let-it-shine 60s linear 2s infinite normal;
+  -webkit-animation: let-it-shine 60s linear 2s infinite normal;
+}
+
 .explanation,
 .explanation2,
 .explanation3,
