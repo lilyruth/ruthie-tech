@@ -33,6 +33,12 @@ span {
   text-shadow: 0 0 0 rgb(99, 62, 141);
 }
 
+.purple-wash {
+  opacity: 0;
+  animation: wash .75s ease-in;
+  position: absolute;
+}
+
 .pink-stars {
  position: relative;
  overflow: hidden;
@@ -53,10 +59,10 @@ span {
 .star11,
 .star12,
 .star13 {
- display: block;
+ opacity: 0;
  position: absolute;
- width: 3px;
- height: 3px;
+ width: 5px;
+ height: 5px;
  background: white;
  border-radius: 100%;
  overflow: hidden;
@@ -101,8 +107,8 @@ span {
 .star6 {
   top: 20%;
   right: 50%;
-  animation: twinkle 1.8s linear 3s infinite normal;
-  -webkit-animation: twinkle 1.8s linear 3s infinite normal;
+  animation: twinkle 1.8s linear 1s infinite normal;
+  -webkit-animation: twinkle 1.8s linear 1s infinite normal;
 }
 
 .star7 {
@@ -115,69 +121,190 @@ span {
 .star8 {
   top: 60%;
   right: 41%;
-  animation: twinkle 1.5s linear 2.75s infinite normal;
-  -webkit-animation: twinkle 1.5s linear 2.75s infinite normal;
+  animation: twinkle 1.5s linear 3.25s infinite normal;
+  -webkit-animation: twinkle 1.5s linear 3.25s infinite normal;
 }
 
 .star9 {
   top: 72%;
   left: 30%;
-  animation: twinkle 4s linear 4s infinite normal;
-  -webkit-animation: twinkle 4s linear 4s infinite normal;
+  animation: twinkle 4s linear 4.25s infinite normal;
+  -webkit-animation: twinkle 4s linear 4.25s infinite normal;
 }
 
 .star10 {
   top: 82%;
   right: 23%;
-  animation: twinkle 1.5s linear 2.75s infinite normal;
-  -webkit-animation: twinkle 1.5s linear 2.75s infinite normal;
+  animation: twinkle 1.5s linear 1.5s infinite normal;
+  -webkit-animation: twinkle 1.5s linear 1.5s infinite normal;
 }
 
 .star11 {
   top: 85%;
   left: 18%;
-  animation: twinkle 4s linear 4s infinite normal;
-  -webkit-animation: twinkle 4s linear 4s infinite normal;
+  animation: twinkle 4s linear 2.5s infinite normal;
+  -webkit-animation: twinkle 4s linear 2.5s infinite normal;
 }
 
 .star12 {
   top: 87%;
   right: 8%;
-  animation: twinkle 2.5s linear 0s infinite normal;
-  -webkit-animation: twinkle 2.5s linear 0s infinite normal;
+  animation: twinkle 2.5s linear 3.5s infinite normal;
+  -webkit-animation: twinkle 2.5s linear 3.5s infinite normal;
 }
 
 .star13 {
   top: 90%;
   left: 15%;
-  animation: twinkle 3s linear 3s infinite normal;
-  -webkit-animation: twinkle 3s linear 3s infinite normal;
+  animation: twinkle 3s linear 0s infinite normal;
+  -webkit-animation: twinkle 3s linear 0s infinite normal;
 }
 
+@keyframes wash {
+  0% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 10vh;
+    width: 100vw;
+    background: linear-gradient(0deg,  rgb(99,62,141), lightpink);
+  }
 
+  10% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 20vh;
+    width: 100vw;
+    background: linear-gradient(0deg,rgb(99,62,141), lightpink,);
+  }
+
+  20% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 30vh;
+    width: 100vw;
+    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink);
+    
+  }
+
+  30% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 40vh;
+    width: 100vw;
+    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink, rgba(255,255,255,0));
+   
+  }
+
+  40% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 50vh;
+    width: 100vw;
+    background: linear-gradient(0deg,rgb(99,62,141), rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0));
+  
+  }
+
+  50% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 60vh;
+    width: 100vw;
+    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+   
+  }
+
+  60% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 70vh;
+    width: 100vw;
+    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+   
+  }
+
+  70% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 80vh;
+    width: 100vw;
+    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+  }
+
+  80% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg,rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+   
+  }
+
+  90% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg, lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+}
 
 @keyframes twinkle {
  0% {
+  display: block;
   transform: scale(1);
   opacity: .8;
  }
 
  25% {
+  display: block;
   transform: scale(.25);
   opacity: 0;
  }
 
  50% {
+  display: block;
   transform: scale(1.5);
   opacity: .4;
  }
 
  75% {
+  display: block;
   transform: scale(.25);
   opacity: 0;
  }
 
  100% {
+  display: block;
   transform: scale(1);
   opacity: .8;
  }
@@ -186,26 +313,31 @@ span {
 
 @-webkit-keyframes twinkle {
  0% {
+  display: block;
   transform: scale(1);
   opacity: .8;
  }
 
  25% {
+  display: block;
   transform: scale(.25);
   opacity: 0;
  }
 
  50% {
+  display: block;
   transform: scale(1.5);
   opacity: .4;
  }
 
  75% {
+  display: block;
   transform: scale(.25);
   opacity: 0;
  }
 
  100% {
+  display: block;
   transform: scale(1);
   opacity: .8;
  }
