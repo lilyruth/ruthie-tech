@@ -390,6 +390,13 @@ span {
   color: white;
 }
 
+.purple-link {
+  color: rgb(99, 62, 141);
+  background: rgb(243, 222, 243);
+  padding: .2rem;
+  border-radius: 10%;
+}
+
 .project .purple,
 .project span {
   color: white;
