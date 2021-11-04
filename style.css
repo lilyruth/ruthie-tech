@@ -9,6 +9,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a:hover {
   color: darkslateblue;
 }
@@ -18,8 +22,20 @@ a:active {
 
 header {
  font-family: 'Montez', sans-serif;
- height: 34vh;
+ height: 94vh;
 }
+
+.arrow {
+color:rgb(99, 62, 141);
+
+}
+
+
+
+
+
+
+
 
 header h1 {
  font-size: 10rem;
@@ -168,7 +184,7 @@ span {
     opacity: 1;
     height: 10vh;
     width: 100vw;
-    background: linear-gradient(0deg,  rgb(99,62,141), lightpink);
+    background: linear-gradient(0deg,  white, lightpink);
   }
 
   10% {
@@ -178,7 +194,7 @@ span {
     opacity: 1;
     height: 20vh;
     width: 100vw;
-    background: linear-gradient(0deg,rgb(99,62,141), lightpink,);
+    background: linear-gradient(0deg,white, lightpink,);
   }
 
   20% {
@@ -188,7 +204,7 @@ span {
     opacity: 1;
     height: 30vh;
     width: 100vw;
-    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink);
+    background: linear-gradient(0deg,white, lightpink);
     
   }
 
@@ -199,7 +215,7 @@ span {
     opacity: 1;
     height: 40vh;
     width: 100vw;
-    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink, rgba(255,255,255,0));
+    background: linear-gradient(0deg,white,lightpink, lightpink);
    
   }
 
@@ -210,7 +226,7 @@ span {
     opacity: 1;
     height: 50vh;
     width: 100vw;
-    background: linear-gradient(0deg,rgb(99,62,141), rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0));
+    background: linear-gradient(0deg,white, lightpink, lightpink, );
   
   }
 
@@ -221,7 +237,7 @@ span {
     opacity: 1;
     height: 60vh;
     width: 100vw;
-    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+    background: linear-gradient(0deg,white, lightpink, lightpink) ;
    
   }
 
@@ -232,7 +248,7 @@ span {
     opacity: 1;
     height: 70vh;
     width: 100vw;
-    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+    background: linear-gradient(0deg,white, lightpink, lightpink);
    
   }
 
@@ -243,7 +259,7 @@ span {
     opacity: 1;
     height: 80vh;
     width: 100vw;
-    background: linear-gradient(0deg,rgb(99,62,141),rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+    background: linear-gradient(0deg,white, lightpink, lightpink);
   }
 
   80% {
@@ -253,7 +269,7 @@ span {
     opacity: 1;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(0deg,rgb(99,62,141), lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+    background: linear-gradient(0deg,white, lightpink, lightpink);
    
   }
 
@@ -264,7 +280,7 @@ span {
     opacity: 1;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(0deg, lightpink, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+    background: linear-gradient(0deg,white, lightpink, lightpink);
   }
 
   100% {
@@ -368,7 +384,9 @@ span {
   background:rgb(99, 62, 141);
   font-family: 'Josefin Sans', sans-serif;
 }
-
+#page2 {
+  height: 94vh;
+}
 .about-projects {
   background:white;
   font-family: 'Josefin Sans', sans-serif;
@@ -443,86 +461,8 @@ footer a {
   min-height: 6rem;
 }
 
-.explanation {
-  animation: exp-slide-in 1.5s ease-in-out;
-}
-.explanation2 {
-  animation: exp-slide-in2 2.5s ease-in-out;
-}
-.explanation3 {
-  animation: exp-slide-in3 3.75s ease-in-out;
-}
-.explanation4 {
-  animation: exp-slide-in4 5s ease-in-out;
-}
 
-@keyframes exp-slide-in {
-  0% {
-    transform: translateX(-200%);
-  }
 
-  80% {
-    transform: translateX(25%);
-  }
-
-  100% {
-    transform: translateX(0%)
-  }
-}
-
-@keyframes exp-slide-in2 {
-  0% {
-    transform: translateX(-200%);
-  }
-
-  50% {
-    transform: translateX(-200%);
-  }
-
-  90% {
-    transform: translateX(25%);
-  }
-
-  100% {
-    transform: translateX(0%)
-  }
-}
-
-@keyframes exp-slide-in3 {
-  0% {
-    transform: translateX(-200%);
-  }
-
-  60% {
-    transform: translateX(-200%);
-  }
-
-  92% {
-    transform: translateX(25%);
-  }
-
-  100% {
-    transform: translateX(0%)
-  }
-}
-
-@keyframes exp-slide-in4 {
-  0% {
-    transform: translateX(-200%);
-  }
-
-  70% {
-    transform: translateX(-200%);
-  }
-
-  95% {
-    transform: translateX(25%);
-  }
-
-  100% {
-    transform: translateX(0%)
-  }
-}
 
 
 @keyframes let-it-shine { 
@@ -628,19 +568,20 @@ footer a {
   background: rgb(99, 62, 141);
 }
 
-@media screen and (max-width: 575px) {
-  .project,
-  .explanation,
-  .explanation2,
-  .explanation3,
-  .explanation4 {
+@media screen and (max-width: 450px) {
+  .project-row {
+   display: none;
+  }
+}
+
+
+@media screen and (max-width:675px) {
+
+  .project {
     width: 95%!important;
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-@media screen and (max-width:675px) {
 
  header h1 {
   font-size: 6rem;
@@ -658,7 +599,15 @@ footer a {
    font-size: 1.5rem;
  }
 
- 
+  .project {
+    margin-top: .75rem;
+    margin-bottom: 0!important;
+    max-width: 500px!important;
+  }
+
+  .explanation, .explanation2, .explanation3, .explanation4 {
+    display: none!important;
+  }
 }
 
 
