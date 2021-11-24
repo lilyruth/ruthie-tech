@@ -17,12 +17,12 @@ const content = {
 
  northTexasPlantsApp: {
   image: './images/NTXPlants.gif',
-  content: 'This is the North Texas Plants site reimagined as a React Native app, complete with the ability to create a shopping list.'
+  content: 'This is the North Texas Plants site reimagined as a React Native app, complete with the ability to create and share a shopping list.'
  },
 
  pocketQuotes: {
   image: './images/pocketQuotes.gif',
-  content: 'This is a full stack MERN app. It fetches from the quotable.io API. Users can create a login and save favorite quotes.'
+  content: 'This is a full stack MERN app. It fetches from the quotable.io API. Users can share quotes, create a login and save favorite quotes.'
  },
 }
 
@@ -54,16 +54,16 @@ buttonNTXP.onclick = () => {
 }
 
 buttonRBASM.onclick = () => {
- projectPhoto.innerHTML = `<a class="purple" href="https://www.rockwallbodyandsoul.com" target="_blank"><img class="img-fluid project-img" src='${content.RBASM.image}' alt="screenshot of North Texas Plants Bootstrap site" /> </a>`;
+ projectPhoto.innerHTML = `<a class="purple" href="https://www.rockwallbodyandsoul.com" target="_blank"><img class="img-fluid project-img" src='${content.RBASM.image}' alt="screenshot of Rockwall Body and Soul site" /> </a>`;
  projectExplanation.textContent = content.RBASM.content;
 }
 
 buttonNTXPapp.onclick = () => {
- projectPhoto.innerHTML = `<a class="purple" href="https://expo.dev/@lilyruth/NTXPlants" target="_blank">  <img class="img-fluid project-img" src='${content.northTexasPlantsApp.image}' alt="screenshot of North Texas Plants Bootstrap site" /> </a>`;
+ projectPhoto.innerHTML = `<a class="purple" href="https://expo.dev/@lilyruth/NTXPlants" target="_blank">  <img class="img-fluid project-img" src='${content.northTexasPlantsApp.image}' alt="gif screenrecord of the NTX Plants app" /> </a>`;
  projectExplanation.textContent = content.northTexasPlantsApp.content;
 }
 
 buttonPQ.onclick = () => {
- projectPhoto.innerHTML = `<a class="purple" href="https://expo.dev/@lilyruth/pocketquotes" target="_blank"> <img class="img-fluid project-img" src='${content.pocketQuotes.image}' alt="screenshot of North Texas Plants Bootstrap site" /> </a>`;
+ projectPhoto.innerHTML = `<a class="purple" href="https://expo.dev/@lilyruth/pocketquotes" target="_blank"> <img class="img-fluid project-img" src='${content.pocketQuotes.image}' alt="gif screenrecord of the Pocket Quotes app" /> </a>`;
  projectExplanation.textContent = content.pocketQuotes.content;
 }
