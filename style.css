@@ -22,20 +22,45 @@ a:active {
 
 header {
  font-family: 'Montez', sans-serif;
- height: 94vh;
+ height: 100vh;
 }
+
+.header-row {
+  height: 93vh;
+}
+
+.projects-row {
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-detail-row {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-img {
+  max-height: 600px;
+  justify-content: right;
+  border-radius: 10px;
+}
+
+.project-explanation {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  min-width: 15rem!important;
+}
+
 
 .arrow {
 color:rgb(99, 62, 141);
-
 }
-
-
-
-
-
-
-
 
 header h1 {
  font-size: 10rem;
@@ -43,22 +68,21 @@ header h1 {
  z-index: 2;
 }
 
+.white-outline { 
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
 span {
   font-size: 1.5rem;
   color: transparent;
-  text-shadow: 0 0 0 rgb(99, 62, 141);
+  text-shadow: 0 0 0 white;
 }
 
-.purple-wash {
-  opacity: 0;
-  animation: wash .75s ease-in;
-  position: absolute;
-}
 
 .pink-stars {
  position: relative;
  overflow: hidden;
- background: linear-gradient(.375turn, lightpink, lavender);
+ background: linear-gradient(.375turn, lightseagreen, lightseagreen, lavender);
 }
 
 /* animated stars */
@@ -176,123 +200,6 @@ span {
   -webkit-animation: twinkle 3s linear 0s infinite normal;
 }
 
-@keyframes wash {
-  0% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 10vh;
-    width: 100vw;
-    background: linear-gradient(0deg,  white, lightpink);
-  }
-
-  10% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 20vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white, lightpink,);
-  }
-
-  20% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 30vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white, lightpink);
-    
-  }
-
-  30% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 40vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white,lightpink, lightpink);
-   
-  }
-
-  40% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 50vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white, lightpink, lightpink, );
-  
-  }
-
-  50% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 60vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white, lightpink, lightpink) ;
-   
-  }
-
-  60% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 70vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white, lightpink, lightpink);
-   
-  }
-
-  70% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 80vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white, lightpink, lightpink);
-  }
-
-  80% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white, lightpink, lightpink);
-   
-  }
-
-  90% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(0deg,white, lightpink, lightpink);
-  }
-
-  100% {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0;
-    height: 100vh;
-    width: 100vw;
-  }
-
-}
 
 @keyframes twinkle {
  0% {
@@ -384,9 +291,7 @@ span {
   background:rgb(99, 62, 141);
   font-family: 'Josefin Sans', sans-serif;
 }
-#page2 {
-  height: 94vh;
-}
+
 .about-projects {
   background:white;
   font-family: 'Josefin Sans', sans-serif;
@@ -422,7 +327,7 @@ span {
 
 .under-header-line-2 {
   height: 2px;
-  background: lightpink;
+  background: lightseagreen;
 }
 
 .link {
@@ -435,7 +340,7 @@ span {
 }
 
 footer {
-  background: linear-gradient(.375turn, lightpink, lavender);
+  background: linear-gradient(.375turn, lightseagreen, lavender);
   height: 4rem;
  
 }
@@ -468,48 +373,48 @@ footer a {
 @keyframes let-it-shine { 
 
   0% {
-    background: linear-gradient(.375turn, #ffb6c1, lavender);
+    background: linear-gradient(.375turn, lightseagreen, lavender);
   }
 
   .125% {
 
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,182,193,1) 15%, rgba(230,230,250,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, lightseagreen 15%, rgba(230,230,250,1) 100%);
 
   }
 
     .25% {
 
-    background: linear-gradient(135deg, rgba(255,182,193,1) 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
+    background: linear-gradient(135deg, lightseagreen 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
 
   }
 
   .375% {
 
-    background: linear-gradient(135deg, rgba(255,182,193,1) 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
+    background: linear-gradient(135deg, lightseagreen 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
 
   }
   
 
   .5% {
 
-    background: linear-gradient(135deg, rgba(255,182,193,1) 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
+    background: linear-gradient(135deg, lightseagreen 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
   }
 
    .625% {
-    background: linear-gradient(135deg, rgba(255,182,193,1) 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
+    background: linear-gradient(135deg, lightseagreen 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
   }
 
   .75% {
-    background: linear-gradient(135deg, rgba(255,182,193,1) 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
+    background: linear-gradient(135deg, lightseagreen 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
   }
 
 
   .875% {
- background: linear-gradient(135deg, rgba(255,182,193,1) 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
+ background: linear-gradient(135deg, lightseagreen 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
   }
 
    1% {
- background: linear-gradient(135deg, rgba(255,182,193,1) 0%, rgba(230,230,250,1) 100%);
+ background: linear-gradient(135deg, lightseagreen 0%, rgba(230,230,250,1) 100%);
   }
  
 }
@@ -518,48 +423,48 @@ footer a {
 @-webkit-keyframes let-it-shine { 
 
   0% {
-    background: linear-gradient(.375turn, #ffb6c1, lavender);
+    background: linear-gradient(.375turn, lightseagreen, lavender);
   }
 
   .125% {
 
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,182,193,1) 15%, rgba(230,230,250,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, lightseagreen 15%, rgba(230,230,250,1) 100%);
 
   }
 
     .25% {
 
-    background: linear-gradient(135deg, rgba(255,182,193,1) 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
+    background: linear-gradient(135deg, lightseagreen 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
 
   }
 
   .375% {
 
-    background: linear-gradient(135deg, rgba(255,182,193,1) 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
+    background: linear-gradient(135deg, lightseagreen 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
 
   }
   
 
   .5% {
 
-    background: linear-gradient(135deg, rgba(255,182,193,1) 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
+    background: linear-gradient(135deg, lightseagreen 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
   }
 
    .625% {
-    background: linear-gradient(135deg, rgba(255,182,193,1) 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
+    background: linear-gradient(135deg, lightseagreen 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
   }
 
   .75% {
-    background: linear-gradient(135deg, rgba(255,182,193,1) 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
+    background: linear-gradient(135deg, lightseagreen 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
   }
 
 
   .875% {
- background: linear-gradient(135deg, rgba(255,182,193,1) 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
+ background: linear-gradient(135deg, lightseagreen 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
   }
 
    1% {
- background: linear-gradient(135deg, rgba(255,182,193,1) 0%, rgba(230,230,250,1) 100%);
+ background: linear-gradient(135deg, lightseagreen 0%, rgba(230,230,250,1) 100%);
   }
  
 }
@@ -568,20 +473,19 @@ footer a {
   background: rgb(99, 62, 141);
 }
 
-@media screen and (max-width: 450px) {
-  .project-row {
-   display: none;
+#page-2 {
+  min-height: 50vh;
+}
+
+@media screen and (min-width:750px) {
+  p {
+    font-size: 1.5rem;
   }
 }
 
 
 @media screen and (max-width:675px) {
 
-  .project {
-    width: 95%!important;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
  header h1 {
   font-size: 6rem;
@@ -599,15 +503,6 @@ footer a {
    font-size: 1.5rem;
  }
 
-  .project {
-    margin-top: .75rem;
-    margin-bottom: 0!important;
-    max-width: 500px!important;
-  }
-
-  .explanation, .explanation2, .explanation3, .explanation4 {
-    display: none!important;
-  }
 }
 
 

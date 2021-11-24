@@ -5,6 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- favicon -->
+    <link rel="icon" href="data:image/svg+xml, 
+    <svg xmlns='http://www.w3.org/2000/svg'>
+      <text y='28' font-size='28'>💜</text>
+    </svg>">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -16,17 +22,17 @@
 
     <!-- Although I removed the javascript file inspired by source, it's such a neat trick I'm keeping the reference here. Glitter effect for header adapted with gratitude from https://www.techumber.com/amazing-glitter-star-effect-using-pure-css3 . Thank you for making fun code available for newbies <3 --> 
 
-    <title>ruthie&hearts;tech</title>
+    <title>ruthie.tech</title>
   </head>
   <body>
   <div class="purple-wash"></div>
 
 <section id="page1">
-   <header class="pink-stars text-center container-fluid d-flex justify-content-center align-items-center" id="header">
+   <header class="pink-stars text-center container-fluid" id="header">
      
-     <div class="row">
+     <div class="row header-row d-flex  justify-content-center align-items-center">
       <div class="col">
-        <h1>ruthie<span class="hearts">  &hearts;</span>tech</h1>
+        <h1 class="white-outline">ruthie<span class="hearts">  &hearts;</span>tech</h1>
       </div>
      </div>
 <!-- Stars -->
@@ -45,14 +51,14 @@
      <figure class="star13"></figure>
     </div>
 
-
-
+  <div class="row down-arrow-row">
+    <div class="col">
+      <a href="#page2">
+       <i id="down-arrow" class="fas fa-chevron-down fa-3x arrow justify-content-center"></i></a></div></div>
   </header>
   </section>
-   <a href="#page2">
-    <i class="fas fa-chevron-down fa-3x arrow justify-content-center d-flex"></i></a>
+
   
- 
 
     <section id="page2">
    <div class="under-header-line"></div>
@@ -74,70 +80,45 @@
   <div class="under-header-line shadow"></div>
 
   <!-- projects -->
-   <div class="container-fluid about-projects">  
+   <div class="container-fluid about-projects justify-content-center align-items-center">  
    
      <div class="row project-row">
        <div class="col mt-4 text-center">
          <h3 class="my-4 mb-2">Coding Projects</h3>
        </div>
      </div>
+     <h5 class="text-center">Click on the button to show the project. Click on the project picture to go to any of the projects.</h5>
 
 
-     <div class="row justify-content-center align-items-center">
-
-     <div class="d-flex col-sm-3 col-xl-2 rounded p-2 my-4 mx-1 ml-xs-0 mr-xs-auto text-center justify-content-center project shadow  align-items-center">
-      <a class="purple" href="https://portfolio-ntxp.netlify.app" target="_blank"> <h4 class="mt-1 mb-0">North Texas Plants </h4> </a> 
-    </div>
-
-    <div class="d-sm-flex  d-none col-sm-8 col-xl-5 rounded p-2 my-4 mx-1 m-xs-0 text-center justify-content-center explanation shadow  align-items-center">
-      <p class="mt-1 mb-0">This Bootstrap site was the first of my portfolio projects for Nucamp Bootcamp.</p> 
-    </div>
-  </div>
-
-  <div class="row justify-content-center align-items-center">
-
-  <div class="d-flex col-sm-3 col-xl-2 rounded p-2 my-4 mx-1 ml-xs-0 mr-xs-auto text-center justify-content-center project shadow  align-items-center">
-        <a class="purple" href="https://www.rockwallbodyandsoul.com" target="_blank"> <h4 class="mt-1 mb-0">Body & Soul Massage Rockwall</h4> </a> 
-      </div>
-  
-      <div class="d-sm-flex  d-none col-sm-8 col-xl-5 rounded p-2 my-4 mx-1 m-xs-0 text-center justify-content-center explanation2 shadow  align-items-center">
-        <p class="mt-1 mb-0">A Bootstrap site that modernizes and streamlines the landing page for this highly regarded Rockwall business.</p> 
-      </div>
-
-    </div>
-
-    <div class="row justify-content-center align-items-center">
-      <div class="d-flex col-sm-3 col-xl-2 rounded p-2 my-4 mx-1 ml-xs-0 mr-xs-auto text-center justify-content-center project shadow  align-items-center">
-        <a class="purple" href="https://expo.dev/@lilyruth/NTXPlants" target="_blank"> <h4 class="mt-1 mb-0">North Texas Plants React Native App</h4> </a> 
-      </div>
-  
-      <div class="d-sm-flex  d-none col-sm-8 col-xl-5 rounded p-2 my-4 mx-1 m-xs-0 text-center justify-content-center explanation3 shadow  align-items-center">
-        <p class="mt-1 mb-0">This portfolio project, which also utilizes Redux Toolkit, fulfilled the requirements for Front End Honors graduation.</p> 
-      </div>
-
-    </div>
-
-    <div class="row justify-content-center align-items-center">
-      <div class="d-flex col-sm-3 col-xl-2 rounded p-2 my-4 mx-1 ml-xs-0 mr-xs-auto text-center justify-content-center project shadow  align-items-center">
-        <a class="purple" href="https://expo.dev/@lilyruth/pocketquotes" target="_blank"> <h4 class="mt-1 mb-0">Pocket Quotes</h4> </a> 
-      </div>
-  
-      <div class="d-sm-flex  d-none col-sm-8 col-xl-5 rounded p-2 my-4 mx-1 m-xs-0 text-center justify-content-center explanation4 shadow  align-items-center">
-        <p class="mt-1 mb-0">Full stack MERN app. Schedule feature not yet completed. Please see test login and more project details at <a class=" purple-link" href="https://github.com/lilyruth/pocket-quotes-client/blob/main/README.md" target="_blank">Github README</a></p> 
-      </div>
+     <div class="row projects-row d-flex justify-content-center align-items-center">   
+       
+      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-info mx-2 my-2 pb-1" id="buttonNTXP">North Texas Plants </button></div>
+        
+      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-info mx-2 my-2 pb-1" id="buttonRBASM">Body & Soul Massage</button></div>
+      
+      <div class="col d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-lg btn-info mx-2 my-2 pb-1" id="buttonNTXPapp">North Texas Plants app</button></div>
+      
+      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-info mx-2 my-2 pb-1" id="buttonPQ">Pocket Quotes app</button></div>
     
     </div>
 
+    <div class="row project-detail-row d-flex justify-content-center align-items-center mt-2">
+
+      <div id="project-photo-id" class="col  project-photo text-center"></div>
+      </div>
+
+      <div class="row project-detail-row d-flex justify-content-center align-items-center mb-2"></div>   
+      <div class="col project-explanation text-center"><p  id = "project-explanation-id" ></p></div>
+      </div>
+    </div>
+
+      </div>
+
+      </div>
      </div>
-   </div>
 
   </section>
-  <div class="d-flex justify-content-center">
-  <a href="#page1">
-    <i class="fas fa-chevron-up fa-3x arrow justify-content-center d-flex"></i></a>
-  <a href="#page3">
-    <i class="fas fa-chevron-down fa-3x arrow justify-content-center d-flex"></i></a></div>
-  <section id="page3">
+
   <div class="under-header-line"></div>
   <div class="under-header-break2"></div>
     <div class="under-header-line2"></div>
@@ -164,8 +145,16 @@
        </div>
 
         <div class="d-flex col-md-3 rounded bg-white p-2 m-4 text-center justify-content-center link shadow  align-items-center">
-         <a class="purple" href="https://codepen.io/lilyruth" target="_blank"> <h4 class="mt-1 mb-0"><i class="fab fa-codepen"></i> Codepen</h4> </a> 
+         <a class="purple" href="https://www.codecademy.com/profiles/lilyruthc" target="_blank"> <h4 class="mt-1 mb-0"><i class="far fa-square"></i></i> Codecademy</h4> </a> 
        </div>
+
+       <div class="d-flex col-md-3 rounded bg-white p-2 m-4 text-center justify-content-center link shadow  align-items-center">
+        <a class="purple" href="https://www.codewars.com/users/LilyRuth" target="_blank"> <h4 class="mt-1 mb-0"><i class="fas fa-code"></i></i> Codewars</h4> </a> 
+      </div>
+
+      <div class="d-flex col-md-3 rounded bg-white p-2 m-4 text-center justify-content-center link shadow  align-items-center">
+        <a class="purple" href="https://leetcode.com/LilyRuth/" target="_blank"> <h4 class="mt-1 mb-0"><i class="fas fa-code"></i> Leetcode</h4> </a> 
+      </div>
 
      </div>
    </div>
@@ -193,6 +182,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="index.js"></script>
+
   </body>
 </html>
