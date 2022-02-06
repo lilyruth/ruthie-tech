@@ -38,32 +38,37 @@ let buttonPQ = document.getElementById('buttonPQ');
 let projectPhoto = document.getElementById('project-photo-id');
 let projectExplanation = document.getElementById('project-explanation-id');
 
+let progress = document.getElementById('progress');
+
 // change this to be hidden based on the y position
 downArrow.onclick = () => {
  downArrow.style.visibility = 'hidden';
 }
 
-console.log(downArrow.getBoundingClientRect().y)
+// Scroll function
+console.log(buttonNTXP.getBoundingClientRect().y)
 
 // button functionality
 
 buttonNTXP.onclick = () => {
  projectPhoto.innerHTML = `<a class="purple" href="https://portfolio-ntxp.netlify.app" target="_blank"> <img class="img-fluid project-img" src='${content.northTexasPlants.image}' alt="screenshot of North Texas Plants Bootstrap site" /> </a>`;
  projectExplanation.textContent = content.northTexasPlants.content;
- 
+ projectPhoto.scrollIntoView();
 }
 
 buttonRBASM.onclick = () => {
  projectPhoto.innerHTML = `<a class="purple" href="https://www.rockwallbodyandsoul.com" target="_blank"><img class="img-fluid project-img" src='${content.RBASM.image}' alt="screenshot of Rockwall Body and Soul site" /> </a>`;
  projectExplanation.textContent = content.RBASM.content;
+ projectPhoto.scrollIntoView();
 }
 
 buttonNTXPapp.onclick = () => {
  projectPhoto.innerHTML = `<a class="purple" href="https://expo.dev/@lilyruth/NTXPlants" target="_blank">  <img class="img-fluid project-img" src='${content.northTexasPlantsApp.image}' alt="gif screenrecord of the NTX Plants app" /> </a>`;
  projectExplanation.textContent = content.northTexasPlantsApp.content;
+ projectPhoto.scrollIntoView();
 }
 
 buttonPQ.onclick = () => {
  projectPhoto.innerHTML = `<a class="purple" href="https://expo.dev/@lilyruth/pocketquotes" target="_blank"> <img class="img-fluid project-img" src='${content.pocketQuotes.image}' alt="gif screenrecord of the Pocket Quotes app" /> </a>`;
- projectExplanation.textContent = content.pocketQuotes.content;
+ projectExplanation.textContent = content.pocketQuotes.content; projectPhoto.scrollIntoView();
 }

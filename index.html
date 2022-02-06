@@ -4,7 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta property="og:title" content="Portfolio for Ruthie, Web Developer" /> 
+    <meta property="og:description" content="Portfolio for Ruthie, Web Developer | Specializing in HTML, CSS, JavaScript, React | Lifelong learner && puzzle solver" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:image" content="https://ruthie.tech/images/ruthie-tech.jpg" /> 
+    <meta name="image" property="og:image" content="https://ruthie.tech/images/ruthie-tech.jpg" />
+    <meta property="og:url" content="https://ruthie.tech" /> 
     <!-- favicon -->
     <link rel="icon" href="data:image/svg+xml, 
     <svg xmlns='http://www.w3.org/2000/svg'>
@@ -92,13 +97,13 @@
 
      <div class="row projects-row d-flex justify-content-center align-items-center">   
        
-      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-info mx-2 my-2 pb-1" id="buttonNTXP">North Texas Plants </button></div>
+      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-primary mx-2 my-2 pb-1" id="buttonNTXP">North Texas Plants </button></div>
         
-      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-info mx-2 my-2 pb-1" id="buttonRBASM">Body & Soul Massage</button></div>
+      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-primary mx-2 my-2 pb-1" id="buttonRBASM">Body & Soul Massage</button></div>
       
-      <div class="col d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-lg btn-info mx-2 my-2 pb-1" id="buttonNTXPapp">North Texas Plants app</button></div>
+      <div class="col d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-lg btn-primary mx-2 my-2 pb-1" id="buttonNTXPapp">North Texas Plants app</button></div>
       
-      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-info mx-2 my-2 pb-1" id="buttonPQ">Pocket Quotes app</button></div>
+      <div class="col d-flex justify-content-center align-items-center"><button type="button" class="btn btn-lg btn-primary mx-2 my-2 pb-1" id="buttonPQ">Pocket Quotes app</button></div>
     
     </div>
 
@@ -131,7 +136,7 @@
    
      <div class="row">
        <div class="col mt-4 text-center">
-         <h3 class="mt-1 mb-0 text-white">See My Progress</h3>
+         <h3 id="progress" class="mt-1 mb-0 text-white">See My Progress</h3>
        </div>
      </div>
      <div class="row justify-content-center align-items-center">
@@ -156,6 +161,10 @@
         <a class="purple" href="https://leetcode.com/LilyRuth/" target="_blank"> <h4 class="mt-1 mb-0"><i class="fas fa-code"></i> Leetcode</h4> </a> 
       </div>
 
+      <div id = "PE" class="PE d-flex col-md-3 rounded bg-white p-2 m-4 text-center justify-content-center link shadow  align-items-center">
+        <class="purple" ><img id="PELogo" class="mt-1 mb-0 toggle-none d-flex" src="https://projecteuler.net/profile/LilyRuth.png"></img><h4 id="text" class="mt-1 mb-0"><i class="fas fa-code"></i>Project Euler</h4>  
+      </div>
+
      </div>
    </div>
  
@@ -178,6 +187,18 @@
 
 
     <!-- Optional JavaScript -->
+    <script>
+      let pe = document.getElementById('PE');
+      let peLogo = document.getElementById('PELogo');
+      let text = document.getElementById('text');
+
+      pe.addEventListener('click', () => {
+        peLogo.classList.toggle('toggle-none');
+        text.classList.toggle('toggle-none');
+      })
+
+     
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

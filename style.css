@@ -77,12 +77,18 @@ span {
   color: transparent;
   text-shadow: 0 0 0 white;
 }
+.PE {
+  cursor: pointer;
+}
+.toggle-none {
+  display: none!important;
+}
 
 
 .pink-stars {
  position: relative;
  overflow: hidden;
- background: linear-gradient(.375turn, lightseagreen, lightseagreen, lavender);
+ background: linear-gradient(.375turn, dodgerblue, lavender);
 }
 
 /* animated stars */
@@ -327,7 +333,7 @@ span {
 
 .under-header-line-2 {
   height: 2px;
-  background: lightseagreen;
+  background: dodgerblue;
 }
 
 .link {
@@ -340,7 +346,7 @@ span {
 }
 
 footer {
-  background: linear-gradient(.375turn, lightseagreen, lavender);
+  background: linear-gradient(.375turn, dodgerblue, lavender, lavender);
   height: 4rem;
  
 }
@@ -368,12 +374,10 @@ footer a {
 
 
 
-
-
 @keyframes let-it-shine { 
 
   0% {
-    background: linear-gradient(.375turn, lightseagreen, lavender);
+    background: linear-gradient(.375turn, dodgerblue, lavender);
   }
 
   .125% {
@@ -384,37 +388,37 @@ footer a {
 
     .25% {
 
-    background: linear-gradient(135deg, lightseagreen 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
+    background: linear-gradient(135deg, dodgerblue 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
 
   }
 
   .375% {
 
-    background: linear-gradient(135deg, lightseagreen 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
+    background: linear-gradient(135deg, dodgerblue 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
 
   }
   
 
   .5% {
 
-    background: linear-gradient(135deg, lightseagreen 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
+    background: linear-gradient(135deg, dodgerblue 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
   }
 
    .625% {
-    background: linear-gradient(135deg, lightseagreen 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
+    background: linear-gradient(135deg, dodgerblue 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
   }
 
   .75% {
-    background: linear-gradient(135deg, lightseagreen 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
+    background: linear-gradient(135deg, dodgerblue 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
   }
 
 
   .875% {
- background: linear-gradient(135deg, lightseagreen 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
+ background: linear-gradient(135deg, dodgerblue 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
   }
 
    1% {
- background: linear-gradient(135deg, lightseagreen 0%, rgba(230,230,250,1) 100%);
+    background: linear-gradient(.375turn, dodgerblue, lavender, lavender);
   }
  
 }
@@ -423,48 +427,48 @@ footer a {
 @-webkit-keyframes let-it-shine { 
 
   0% {
-    background: linear-gradient(.375turn, lightseagreen, lavender);
+    background: linear-gradient(.375turn, dodgerblue, lavender);
   }
 
   .125% {
 
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, lightseagreen 15%, rgba(230,230,250,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, dodgerblue 15%, rgba(230,230,250,1) 100%);
 
   }
 
     .25% {
 
-    background: linear-gradient(135deg, lightseagreen 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
+    background: linear-gradient(135deg, dodgerblue 10%, rgba(255,255,255,1) 25%, rgba(230,230,250,1) 40%);
 
   }
 
   .375% {
 
-    background: linear-gradient(135deg, lightseagreen 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
+    background: linear-gradient(135deg, dodgerblue 25%, rgba(255,255,255,1) 40%, rgba(230,230,250,1) 55%);
 
   }
   
 
   .5% {
 
-    background: linear-gradient(135deg, lightseagreen 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
+    background: linear-gradient(135deg, dodgerblue 35%, rgba(255,255,255,1) 50%, rgba(230,230,250,1) 65%);
   }
 
    .625% {
-    background: linear-gradient(135deg, lightseagreen 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
+    background: linear-gradient(135deg, dodgerblue 45%, rgba(255,255,255,1) 60%, rgba(230,230,250,1) 75%);
   }
 
   .75% {
-    background: linear-gradient(135deg, lightseagreen 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
+    background: linear-gradient(135deg, dodgerblue 60%, rgba(255,255,255,1) 75%, rgba(230,230,250,1) 90%);
   }
 
 
   .875% {
- background: linear-gradient(135deg, lightseagreen 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
+ background: linear-gradient(135deg, dodgerblue 0%, rgba(230,230,250,1) 85%, rgba(255,255,255,1) 100%);
   }
 
    1% {
- background: linear-gradient(135deg, lightseagreen 0%, rgba(230,230,250,1) 100%);
+    background: linear-gradient(.375turn, dodgerblue, lavender, lavender);
   }
  
 }
