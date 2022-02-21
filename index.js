@@ -24,6 +24,11 @@ const content = {
   image: './images/pocketQuotes.gif',
   content: 'This is a full stack MERN app. It fetches from the quotable.io API. Users can share quotes, create a login and save favorite quotes.'
  },
+
+ NASA: {
+  image: './images/APOD.gif',
+  content: 'This is a simple web app that retrieves from the NASA Astronomy Picture of the Day API. This is the first project where I created a proxy server to hide the API key. I also learned Material UI for this project.'
+ },
 }
 
 // variables
@@ -71,4 +76,9 @@ buttonNTXPapp.onclick = () => {
 buttonPQ.onclick = () => {
  projectPhoto.innerHTML = `<a class="purple" href="https://expo.dev/@lilyruth/pocketquotes" target="_blank"> <img class="img-fluid project-img" src='${content.pocketQuotes.image}' alt="gif screenrecord of the Pocket Quotes app" /> </a>`;
  projectExplanation.textContent = content.pocketQuotes.content; projectPhoto.scrollIntoView();
+}
+
+buttonNASA.onclick = () => {
+ projectPhoto.innerHTML = `<a class="purple" href="https://ruthie-apod.netlify.app" target="_blank"> <img class="img-fluid project-img" src='${content.NASA.image}' alt="gif screenrecord of the NASA photo of the day app" /> </a>`;
+ projectExplanation.textContent = content.NASA.content; projectPhoto.scrollIntoView();
 }

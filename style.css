@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@font-face {
+  font-family: "Kolker Brush";
+  src: url('./KolkerBrush.woff2') format('woff2');
+}
 
+@font-face {
+  font-family: "Josefin Sans";
+  src: url('./JosefinSans.otf');
+}
 
 * {
   margin: 0;
@@ -21,16 +27,19 @@ a:active {
 }
 
 header {
- font-family: 'Montez', sans-serif;
+ font-family: 'Kolker Brush', cursive;
  height: 100vh;
 }
-
+.tag {
+  font-family: 'Kolker Brush', cursive;
+  font-size: 5rem;
+}
 .header-row {
   height: 90vh;
 }
 
 .projects-row {
-  max-width: 70vw;
+  max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,7 +72,7 @@ color:rgb(99, 62, 141);
 }
 
 header h1 {
- font-size: 10rem;
+ font-size: 18rem;
  color: rgb(99, 62, 141);
  z-index: 2;
 }
@@ -73,7 +82,7 @@ header h1 {
 }
 
 span {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: transparent;
   text-shadow: 0 0 0 white;
 }
@@ -82,6 +91,10 @@ span {
 }
 .toggle-none {
   display: none!important;
+}
+
+.links {
+  border-radius: 50px;
 }
 
 
@@ -301,16 +314,13 @@ span {
 .about-projects {
   background:white;
   font-family: 'Josefin Sans', sans-serif;
+  color:rgb(99, 62, 141);
 }
 
 
 .emoji {
   color: transparent;
   text-shadow: 0 0 0 white;
-}
-
-.about-projects {
-  color:rgb(99, 62, 141);
 }
 
 .project {
@@ -514,11 +524,15 @@ footer a {
 @media screen and (max-width:300px) {
 
   header h1 {
-   font-size: 4rem;
+   font-size: 7rem;
   }
  
   h2 {
     font-size: 1.5rem;
+  }
+
+  .tag {
+    font-size: 3.5rem;
   }
  
   .hearts {
